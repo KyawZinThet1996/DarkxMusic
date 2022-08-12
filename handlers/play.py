@@ -112,7 +112,7 @@ async def play(_, message: Message):
     global que
     global useer
 
-    lel = await message.reply("**🔄 ᴘʀᴏᴄᴇꜱꜱɪɴɢ...**")
+    lel = await message.reply("**🔄 သီချင်းရှာနေတယ်...ခနစောင့်.........**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -135,7 +135,7 @@ async def play(_, message: Message):
                         invitelink = invitelink.replace("https://t.me/+","https://t.me/joinchat/")
                 except:
                     await lel.edit(
-                        "<b>ᴘʟᴇᴀꜱᴇ ᴀᴛ ꜰɪʀꜱᴛ ᴍᴀᴋᴇ ᴍᴇ \n ᴀɴ ᴀᴅᴍɪɴ...</b>",
+                        "<b>ᴘʟᴇᴀꜱᴇ ᴀᴅᴍɪɴပေးရန်လိုပါသည်......</b>",
                     )
                     return
 
@@ -143,7 +143,7 @@ async def play(_, message: Message):
                     await USER.join_chat(invitelink)
                     await USER.send_message(
                         message.chat.id,
-                        "**ᴀꜱꜱɪꜱᴛᴀɴᴛ ɴᴏᴡ ʀᴇᴀᴅʏ \n ᴛᴏ ᴘʟᴀʏ ᴍᴜꜱɪᴄ...**",
+                        "**...**",
                     )
 
                 except UserAlreadyParticipant:
@@ -258,7 +258,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "**ɢɪᴠᴇ ᴍᴜꜱɪᴄ ɴᴀᴍᴇ ᴛᴏ \n ᴘʟᴀʏ...**"
+                "**ɢɪᴠᴇ ᴍᴜꜱɪᴄ ɴᴀᴍᴇ ᴛᴏ \n ᴘʟᴀʏ..နောက်မှာသီချင်းနာမည်ထည့်ပါ...**"
             )
         await lel.edit("**🔎ꜱᴇᴀʀᴄʜɪɴɢ...**")
         query = message.text.split(None, 1)[1]
